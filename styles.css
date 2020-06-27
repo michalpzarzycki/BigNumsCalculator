@@ -16,6 +16,8 @@
 
 html,
 body {
+    background-color: black;
+    color:black;
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -36,8 +38,21 @@ body {
 
 }
 .form {
+    padding: 100px;
+    position: relative;
     margin: 0 auto;
     font-family: dig;
+    border: 2px solid white;
+}
+.title {
+    position: absolute;
+    color: white;
+    width: auto!important;
+    left: 10%;
+    top: -20px;
+    background: black;
+    font-size: 40px;
+    letter-spacing: 5px;
 }
 .form > form {
     display: flex;
@@ -54,6 +69,28 @@ body {
 }
 input::placeholder {
     font-family: dig;
+}
+input[type="text"] {
+    padding:10px 10px 10px 60px;
+    background: url("/icons8-cube-64\ \(1\).png") no-repeat;
+    background-size: contain;
+    height: 30px;
+    color: white;
+    text-align: left;
+    font-size: 30px;
+    font-family: dig;
+    border: 2px solid white;
+    border-radius: 5px;
+    outline: none;
+}
+input[type="text"]:nth-child(2) {
+    background: url("/icons8-cube-64\ \(2\).png") no-repeat;
+    background-size: contain;
+
+}
+input[type="text"]:focus {
+    border: 2px solid green;
+    outline: none;
 }
 input[type="radio"] {
     opacity: 0;
