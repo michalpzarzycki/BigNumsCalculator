@@ -43,6 +43,7 @@ body {
     margin: 0 auto;
     font-family: dig;
     border: 2px solid white;
+    border-radius: 0 40px;
 }
 .title {
     position: absolute;
@@ -53,6 +54,16 @@ body {
     background: black;
     font-size: 40px;
     letter-spacing: 5px;
+    padding-left: 5px;
+}
+.title::after {
+    background: url(/icons8-calculator-64.png);
+    content: "";
+    position: absolute;
+    background-size: contain;
+    top: -6px;
+    width: 50px;
+    height: 50px;
 }
 .form > form {
     display: flex;
@@ -102,18 +113,51 @@ label[for="add"], label[for="multiply"] {
     margin-bottom: 10px;
     display: inline-block;
     padding-left: 35px;
-    background: url(/icons8-unchecked-radio-button-48.png) no-repeat;
+    background: url(/icons8-circled-thin-64.png) no-repeat;
     background-size: contain;
     cursor: pointer;
     text-align: left;
-    height: 30px;
+    height: 50px;
     line-height: 30px;
     transition: background 0.5s ease-in-out;
+    width: ;
 
 
 }
-input[type="radio"]:checked + label{
+h3 {
+    color: wheat;
+}
+label[for="multiply"] {
+    background: url(/multiply-non.png) no-repeat;
+    background-size: contain;
+}
+input[type="radio"]:checked + label[for="add"]{
     color: white;
-    background-image: url(/icons8-checked-radio-button-48.png);
+    background-image: url("/icons8-circled-thin-64\ \(1\).png");
    
+}
+input[type="radio"]:checked  + label[for="multiply"] {
+    background-image: url(/multiply_checked.png);
+
+}
+#calculate {
+    background: url(/icons8-code-64.png) no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 50px;
+    width: 50%;
+    color: white;
+    text-align: left;
+    padding-left: 50px;
+}
+
+#clear {
+    background: url(/icons8-benzene-ring-64.png) no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 50px;
+    width: 50%;
+    color: white;
+    text-align: left;
+    padding-left: 50px;
 }
