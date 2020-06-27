@@ -141,23 +141,64 @@ input[type="radio"]:checked  + label[for="multiply"] {
 
 }
 #calculate {
-    background: url(/icons8-code-64.png) no-repeat;
+    background: url(/icons8-code-64.png) black no-repeat;
     background-size: contain;
     background-position: left;
-    height: 50px;
-    width: 50%;
+    width: 75%;
     color: white;
     text-align: left;
-    padding-left: 50px;
+    font-family: dig;
+    font-size: 30px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px 10px 10px 60px;
+    position: absolute;
+    top:3px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    
+
 }
 
 #clear {
-    background: url(/icons8-benzene-ring-64.png) no-repeat;
+    background: url(/icons8-benzene-ring-64.png) black no-repeat;
     background-size: contain;
     background-position: left;
-    height: 50px;
-    width: 50%;
+    width: 75%;
     color: white;
     text-align: left;
-    padding-left: 50px;
+    font-family: dig;
+    font-size: 30px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 60px;
+    position: absolute;
+    top:3px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    border: 0;
+
+}
+.border {
+    width: calc(75% + 4px);
+    height: 59px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    background: linear-gradient(133deg, rgba(26,255,67,1) 0%, rgba(200,34,255,1) 100%);
+    
+
+
+}
+.btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 59px;
+    margin-bottom: 5px!important;
+
 }
