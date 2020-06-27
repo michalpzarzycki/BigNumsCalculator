@@ -7,7 +7,30 @@
     <title>BIG NUMS CALCULATOR</title>
 </head>
 <body>
-    
+    <div class="mainContainer">
+        <section class="header">
+            <h1>BIG NUMBERS CALCULATOR</h1>
+            <p>Number.MAX_SAFE_INTEGER is not a problem anymore ;)</p>
+        </section>
+        <section class="form">
+            <h2>ENTER THE NUMBERS</h2>
+            <form action="">
+                <label for="firstNum">FIRST NUMBER</label>
+                <input name="firstNum" type="text">
+                <label for="secondNum">SECOND NUMBER</label>
+                <input name="secondNum" type="text">
+                <input type="radio" id="add" name="math">
+                <label for="add">ADD</label>
+                <input type="radio" id="multiply" name="math">
+                <label for="multiply">MULTIPlY</label>
+                <button>CALCULATE</button>
+                <button id="clear">CLEAR</button>
+            </form>
+        </section>
+        <section class="result">
+            <p>RESULT</p>
+        </section>
+    </div>
     <script src="/script.js"></script>
 </body>
 </html>
